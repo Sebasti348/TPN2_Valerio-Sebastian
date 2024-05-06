@@ -4,14 +4,14 @@ package ar.edu.unju.fi.ejercicio03.constantes;
 public enum Provincia {
 	/*Los valores en las provincias representan los valores iniciales para
 	la cantidad de población y la superficie en el enum*/
-	JUJUY(1500000, 68212.5),
-    SALTA(2000000, 59123.7),
-    TUCUMAN(2500000, 67890.0),
-    CATAMARCA(600000, 45678.9),
-    LA_RIOJA(700000, 34567.8),
-    SANTIAGO_DEL_ESTERO(5000000, 78901.2);
+	JUJUY(811611, 53.219),
+    SALTA(1441351, 155.488),
+    TUCUMAN(1678305, 22.524),
+    CATAMARCA(429562, 102.602),
+    LA_RIOJA(38386, 89.680),
+    SANTIAGO_DEL_ESTERO(896461, 136.351);
 
-    private long cantidadPoblacion;
+    private  long cantidadPoblacion;
     //la superficie esta en km2
     private double superficie;
 

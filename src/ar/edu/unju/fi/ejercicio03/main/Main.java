@@ -10,7 +10,7 @@ public class Main {
 	        for (Provincia provincia : provincias) {
 	            System.out.println("Provincia: " + provincia);
 	            System.out.println("Cantidad de población: " + provincia.getCantidadPoblacion());
-	            System.out.println("Superficie: " + provincia.getSuperficie());
+	            System.out.println("Superficie: " + provincia.getSuperficie()+"km²");
 	            System.out.println("Densidad poblacional: " + provincia.calcularDensidadPoblacional());
 	            System.out.println();
 	        }
