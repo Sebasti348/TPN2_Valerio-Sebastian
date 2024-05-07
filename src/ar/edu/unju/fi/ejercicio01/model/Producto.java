@@ -7,6 +7,7 @@ public class Producto {
 	private Double pu;
 	private Origen origen;
 	private Categoria categoria;
+	private boolean estado =true;
 	
 	// Enum del Origen del Producto
 	public enum Origen {
@@ -48,25 +49,34 @@ public class Producto {
 		this.categoria = categoria;
 	}
 	
+	
 	//Constructor por defecto
 	
+	public boolean isEstado() {
+		return estado;
+	}
+	public void setEstado(boolean estado) {
+		this.estado = estado;
+	}
 	public Producto() {
 		// TODO Auto-generated constructor stub
 	}
 	//Constructor Parametrizado
 	
-	public Producto(String codigo, String desc, Double pu, Origen origen, Categoria categoria) {
+	
+	@Override
+	public String toString() {
+		return "Producto [codigo=" + codigo + ", desc=" + desc + ", pu=" + pu + ", origen=" + origen + ", categoria="
+				+ categoria + "]";
+	}
+	public Producto(String codigo, String desc, Double pu, Origen origen, Categoria categoria, boolean estado) {
 		super();
 		this.codigo = codigo;
 		this.desc = desc;
 		this.pu = pu;
 		this.origen = origen;
 		this.categoria = categoria;
-	}
-	@Override
-	public String toString() {
-		return "Producto [codigo=" + codigo + ", desc=" + desc + ", pu=" + pu + ", origen=" + origen + ", categoria="
-				+ categoria + "]";
+		this.estado = estado;
 	}
 	
 	
